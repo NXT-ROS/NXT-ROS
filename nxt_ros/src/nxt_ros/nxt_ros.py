@@ -471,7 +471,7 @@ def main():
 
     # Define exit handler
     def cleanup_node():
-        print "Shutting down node"
+        print("Shutting down node")
         for c in config:
             if c['type'] == 'color':
                 # If there's a color sensor, turn off the LED light
