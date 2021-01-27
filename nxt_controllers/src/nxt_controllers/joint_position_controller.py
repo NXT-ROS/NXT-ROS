@@ -72,7 +72,7 @@ class JointPositionController:
                 cmd = JointCommand()
                 cmd.name = self.name
                 cmd.effort = 190.0 * (self.pos_desi - pos) - 4.0 * self.vel
-                print 'Joint at %f, going to %f, commanding joint %f'%(pos,self.pos_desi, cmd.effort)
+                print('Joint at %f, going to %f, commanding joint %f'%(pos,self.pos_desi, cmd.effort))
                 self.pub.publish(cmd)
 
 
